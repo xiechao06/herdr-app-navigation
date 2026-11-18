@@ -1,0 +1,8 @@
+{
+  "terminal": {
+    "ctrl-h": "pane-nav.left",
+    "ctrl-j": "pane-nav.down",
+    "ctrl-k": "pane-nav.up",
+    "ctrl-l": "pane-nav.right"
+  }
+}
