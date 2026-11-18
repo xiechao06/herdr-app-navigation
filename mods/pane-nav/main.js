@@ -40,7 +40,7 @@ export default class PaneNav extends View {
     const name = String(terminals().find((t) => t.address === terminal)?.foreground?.name ?? "").toLowerCase();
     if (terminal && VIM.test(name)) {
       // Let the editor move between its own splits; at an edge it calls
-      // `herdr-app do pane.go` itself (see editor/herdr-nav.lua).
+      // `herdr-app do pane.go` itself (see nvim-herdr-app-navigation/).
       await hc(["keys", terminal, CHORD[command]]);
       return;
     }
